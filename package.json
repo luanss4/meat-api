@@ -1,0 +1,23 @@
+{
+  "name": "meat-api",
+  "version": "1.0.0",
+  "description": "API de Restaurantes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "mongoose": "^5.1.5",
+    "restify": "^7.2.1",
+    "restify-errors": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^2.0.0",
+    "@types/mongoose": "^5.0.15",
+    "@types/restify": "^7.2.0",
+    "@types/restify-errors": "^4.3.3"
+  }
+}
