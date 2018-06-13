@@ -10,7 +10,7 @@ export class Server {
 
   application: restify.Server
 
-  initializeDb() {
+  initializeDb(){
     (<any>mongoose).Promise = global.Promise
     return mongoose.connect(environment.db.url)
   }
