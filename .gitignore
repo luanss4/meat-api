@@ -1,5 +1,5 @@
-/nbproject/private/
-/.vscode/settings.json
-/.vscode/launch.json
-/node_modules
 /dist
+/node_modules
+.DS_Store
+package-lock.json
+.vscode/

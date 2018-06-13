@@ -1,11 +1,11 @@
 import {Server} from './server/server'
-const server = new Server()
 import {usersRouter} from './users/users.router'
 
+const server = new Server()
 server.bootstrap([usersRouter]).then(server=>{
-    console.log('API está rodando na porta ', server.application.address())
+  console.log('Server is listening on:', server.application.address())
 }).catch(error=>{
-    console.log('Servidor falhou ao startar.')
-    console.log(error)
-    process.exit(2)
+  console.log('Server failed to start')
+  console.error(error)
+  process.exit(1)
 })
