@@ -25,7 +25,7 @@ class RestaurantsRouter extends ModelRouter<Restaurant> {
          }
        }).catch(next)
   }
-
+  
   replaceMenu = (req, resp, next)=>{
       Restaurant.findById(req.params.id).then(rest=>{
         if(!rest){
